@@ -12,6 +12,8 @@ const Home = () => {
         <div className="home">
                         {/* here is the object props defined in arguments of the child */}
             <BlogList blogs ={blogs} title="All Blogs!" />  
+            <BlogList blogs ={blogs.filter( (blog) => blog.author === "mario" )} 
+                title="Mario's Blogs!" />  
         </div>
      );
 }
